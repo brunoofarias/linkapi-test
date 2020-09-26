@@ -1,0 +1,26 @@
+{
+  "name": "linkapi-test",
+  "version": "1.0.0",
+  "description": "Esse é o teste para a vaga de Desenvolvedor Back-End Pl. da Link API",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon src/index.js",
+    "prod": "pm2 start src/index.js --name linkapi-test",
+    "test": "jest"
+  },
+  "author": "Bruno Farias",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7",
+    "node-restful": "^0.2.6",
+    "pm2": "^4.4.1"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
