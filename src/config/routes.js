@@ -1,11 +1,12 @@
-import express from 'express'
+import GeneralController from './../controllers/general.js'
+import OrdersController from './../controllers/orders.js'
 
 const createRoutes = (server) => {
-    const router = express.Router()
-
     const create = () => {
         console.log('> [routes] Starting...')
-        server.use('/api', router)
+        
+        GeneralController(server)
+        OrdersController(server)
 
         console.log('> [routes] Starting done! All routes configured.')
     }

@@ -15,7 +15,7 @@ const createWebserver = () => {
             server.use(bodyParser.json())
 
             server.listen(port, () => {
-                console.log(`> [webserver]: Starting done! Webserver running in port ${port}`)
+                console.log(`> [webserver] Starting done! Webserver running in port ${port}`)
             })
 
             resolve(server)
